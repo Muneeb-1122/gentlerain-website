@@ -33,7 +33,6 @@ html, body {
     height: 100vh;
     color: #fff;
     position: relative;
-    overflow-x: hidden;
 }
 
 /* nav bar */
@@ -43,7 +42,7 @@ nav {
     height: 10vh;
     justify-content: space-between;
     padding: 0 .8rem;
-    z-index: 999;
+    z-index: 1;
 }
 
 /* hero section */
@@ -61,6 +60,7 @@ nav {
     justify-content: center;
     position: absolute;
     top: 0;
+    overflow-x: hidden;
 }
 
 .logo {
@@ -117,6 +117,7 @@ a {
     height: 100%;
     justify-content: end;
     gap: 2rem;
+    margin-right: .8rem;
 }
 
 .extra-btn button {
@@ -137,7 +138,7 @@ a {
     height: 30vh;
     justify-content: end;
     padding: 0 .8rem;
-    z-index: 999;
+    z-index: 1;
 }
 
 #hero-btm-left {
@@ -159,7 +160,7 @@ a {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
 }
 
 #hero-section-btns {
@@ -195,4 +196,9 @@ button:hover, a:hover {
     background-color: #fff;
     color: #FD7024;
     transition: all 0.3s ease;
+}
+
+#hero-section-img {
+    position: absolute;
+    top: 30%;
 }
